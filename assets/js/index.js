@@ -19,6 +19,9 @@ console.log(getSmallerNumber());
 console.log('=== Task 2 ===');
 const isAdult = function() {
   const age = prompt('Enter you age: ');
+  if(typeof age !== 'number') {
+    return null;
+  }
   // if(age >= 18) {
   //   return true;
   // } else {
@@ -32,6 +35,9 @@ console.log(isAdult());
 console.log('=== Task 3 ===');
 const price = function() {
   const Price = prompt('Enter Sum: ');
+  if(typeof Price !== 'number') {
+    return null;
+  }
   // if(Price >= 1500) {
   //   return Price - Price / 100 * 10;
   // } else {
@@ -45,6 +51,9 @@ console.log(price());
 console.log('=== Task 3 ===');
 const isEven = function() {
   const Number = prompt('Enter a number: ');
+  if(typeof Number !== 'number') {
+    return null;
+  }
   // if(Number % 2 === 0) {
   //   return true;
   // } else {
